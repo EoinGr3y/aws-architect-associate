@@ -42,15 +42,6 @@
 	API Gateway - create apis for services to connect to.
 	Direct Connect - create dedicated line from corporate office into Amazon, connects to your VPC.
 
-	Developer Tools
-	CodeStar - code collaboration tool.
-	CodeCommit - source control service.
-	CodeBuild - compiles and runs tests against your code.
-	CodeDeploy - automates application deployment.
-	CodePipeline - continuous delivery service.
-	X-Ray - debug and analyse serverless applications.
-	Cloud9 - IDE within AWS console.
-
 	Management Tools
 	CloudWatch - monitoring service.
 	CloudFormation - allows you to script infrastructure.
@@ -61,25 +52,6 @@
 	Systems Manager - interface for managing AWS resources.
 	Trusted Advisor - gives security advice, i.e. ports left open.
 	Managed Services - don't want to have to manage your own EC2 instance, auto scaling etc.
-
-	Media services
-	Elastic Transcoder - resizes media for different platforms.
-	MediaConvert - video transcoding service.
-	MediaLive - live video processing service.
-	MediaPackage - prepares and protects videos for delivery over the internet.
-	MediaStore - storage service optimised for media.
-	MediaTailor - targeted advertising into media streams.
-
-	Machine Learning
-	SageMaker - allows developers to use deep learning when coding for environments.
-	Comprehend - Sentiment analysis around data.
-	DeepLens - artificially aware camera. Detects people approaching camera.
-	Lex - Powers Alexa. Artificially intelligent means of communicating with customers.
-	Machine Learning - put data sets in cloud along with results to detect patterns.
-	Polly - takes text and turns it into speech.
-	Rekognition - video and image analysis.
-	Amazon Translate - amazon translation service.
-	Amazon Transcribe - automatic speech recognition turned to text.
 
 	Analytics
 	Athena - run sql queries against s3 buckets.
@@ -112,7 +84,39 @@
 	SQS - decouple infrastructure, holds information in queue that can be polled.
 	SWF - work flow service.
 
-	----------------- Not required for Developer Associate -----------------
+	Desktop and App Streaming
+	Workspaces - VDI for running OS in AWS.
+	AppStream 2.0 - run application in cloud and stream.
+
+------------ Not required for solutions architect exam ------------
+
+	Developer Tools
+	CodeStar - code collaboration tool.
+	CodeCommit - source control service.
+	CodeBuild - compiles and runs tests against your code.
+	CodeDeploy - automates application deployment.
+	CodePipeline - continuous delivery service.
+	X-Ray - debug and analyse serverless applications.
+	Cloud9 - IDE within AWS console.
+
+	Media services
+	Elastic Transcoder - resizes media for different platforms.
+	MediaConvert - video transcoding service.
+	MediaLive - live video processing service.
+	MediaPackage - prepares and protects videos for delivery over the internet.
+	MediaStore - storage service optimised for media.
+	MediaTailor - targeted advertising into media streams.
+
+	Machine Learning
+	SageMaker - allows developers to use deep learning when coding for environments.
+	Comprehend - Sentiment analysis around data.
+	DeepLens - artificially aware camera. Detects people approaching camera.
+	Lex - Powers Alexa. Artificially intelligent means of communicating with customers.
+	Machine Learning - put data sets in cloud along with results to detect patterns.
+	Polly - takes text and turns it into speech.
+	Rekognition - video and image analysis.
+	Amazon Translate - amazon translation service.
+	Amazon Transcribe - automatic speech recognition turned to text.
 
 	Mobile services
 	Mobile Hub - management console, sets up AWS services for you.
@@ -133,10 +137,6 @@
 	Chime - video conferencing like zoom meetings.
 	Work Docs - dropbox for AWS.
 	WorkMail - Like office365.
-
-	Desktop and App Streaming
-	Workspaces - VDI for running OS in AWS.
-	AppStream 2.0 - run application in cloud and stream.
 
 	Internet of Things
 	iOT - have large number of devices sending back information.
