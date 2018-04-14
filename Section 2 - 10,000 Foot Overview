@@ -1,0 +1,148 @@
+
+	*	VPCs are key topic.
+
+	---Section 2 - 10,000 Foot Overview---
+
+	AWS Global Infrastructure
+	Availability zone - a datacenter, multiple AZs per region.
+	Edge Locations - endpoints for AWS that are used for caching content.
+
+	Compute
+	EC2 - Virtual Machines inside the AWS platform.
+	EC2 Container Services - run and manage docker containers at scale.
+	Elastic Beanstalk - no understanding of AWS required, upload code and infrastructure is auto-configured.
+	Lambda - Upload code to cloud and control when it executes, no infrastructure to manage.
+	Lightsail - VPS Service, no understanding of AWS required, auto-configured, watered down version of EC2.
+	Batch - Do batch computing in cloud.
+
+	Storage
+	S3 - Object based storage, upload files into buckets.
+	EFS - Network attached storage, can be mounted to multiple virtual machines.
+	Glacier - Data archiving, cheap storage.
+	Snowball - bring large amounts of data into AWS data centre.
+	Storage Gateway - VMs that can be installed in datacenter, replicate information back to S3.
+
+	Databases
+	RDS - mysql, postgresql or any other relational dbs.
+	DynamoDB - non relational dbs.
+	Elasticache - cache commonly queried things from your db server.
+	Red Shift - data warehousing or business intelligence.
+
+	Migration
+	AWS Migration Hub - tracking service, tracks applications as you migrate to AWS.
+	Application Discovery Service - automated tools to detect applications and their dependencies.
+	Database Migration Service - migrate your dbs from on-site to AWS.
+	Server Migration Service - migrate your virtual and physical servers into AWS.
+	Snowball - migrate large amounts of data into AWS data centre.
+
+	Networking and Content Delivery
+	VPC - private cloud, a virtual data centre. Lots of configuration, route tables, firewalls etc.
+	CloudFront - content delivery network. Allows users to access cached content from edge locations.
+	Route53 - DNS service.
+	API Gateway - create apis for services to connect to.
+	Direct Connect - create dedicated line from corporate office into Amazon, connects to your VPC.
+
+	Developer Tools
+	CodeStar - code collaboration tool.
+	CodeCommit - source control service.
+	CodeBuild - compiles and runs tests against your code.
+	CodeDeploy - automates application deployment.
+	CodePipeline - continuous delivery service.
+	X-Ray - debug and analyse serverless applications.
+	Cloud9 - IDE within AWS console.
+
+	Management Tools
+	CloudWatch - monitoring service.
+	CloudFormation - allows you to script infrastructure.
+	CloudTrail - logs all changes to your AWS environment.
+	Config - monitors configuration of entire AWS environments.
+	OpsWorks - similar to Elastic Beanstalk, uses chef and puppet to automate environment configuration.
+	Service Catalog - manages catalogues of IT services available on AWS.
+	Systems Manager - interface for managing AWS resources.
+	Trusted Advisor - gives security advice, i.e. ports left open.
+	Managed Services - don't want to have to manage your own EC2 instance, auto scaling etc.
+
+	Media services
+	Elastic Transcoder - resizes media for different platforms.
+	MediaConvert - video transcoding service.
+	MediaLive - live video processing service.
+	MediaPackage - prepares and protects videos for delivery over the internet.
+	MediaStore - storage service optimised for media.
+	MediaTailor - targeted advertising into media streams.
+
+	Machine Learning
+	SageMaker - allows developers to use deep learning when coding for environments.
+	Comprehend - Sentiment analysis around data.
+	DeepLens - artificially aware camera. Detects people approaching camera.
+	Lex - Powers Alexa. Artificially intelligent means of communicating with customers.
+	Machine Learning - put data sets in cloud along with results to detect patterns.
+	Polly - takes text and turns it into speech.
+	Rekognition - video and image analysis.
+	Amazon Translate - amazon translation service.
+	Amazon Transcribe - automatic speech recognition turned to text.
+
+	Analytics
+	Athena - run sql queries against s3 buckets.
+	EMR - processing large amounts of data. Chops data up for analysis.
+	CloudSearch - Search service for AWS.
+	ElasticSearch Service - Search service for AWS.
+	Kinesis - ingest large amounts of data into AWS.
+	Kinesis Video Streams - ingest large amounts of data from video streams.
+	QuickSight - business intelligence tool.
+	Data Pipeline - move data between multiple AWS instances.
+	Glue - used for ETL, large amounts of data migration.
+
+	Security Identity & Compliance
+	IAM - user access management.
+	Cognito - device authentication, using facebook or gmail.
+	GuardDuty - monitors for malicious activity on AWS account.
+	Inspector - agent that can be installed on EC2 instances, run tests using this agent for vulnerabilities.
+	Macie - scan S3 buckets for personal identificacion data.
+	Certificate Manager - manages SSL certificates.
+	CloudHSM - manages private and public keys.
+	Directory Service - integrate your Microsoft active directory services with AWS services.
+	WAF - layer 7 firewall, stops cross-site-scripting, sql injection etc.
+	Shield - DDOS mitigation, comes automatically with many AWS services.
+	Artifact - portal to download AWS compliance reports.
+
+	Application Integration
+	Step Functions - manage your Lambda functions and their different steps.
+	Amazon MQ - message queues, similar to rabbit mq.
+	SNS - notification service.
+	SQS - decouple infrastructure, holds information in queue that can be polled.
+	SWF - work flow service.
+
+	----------------- Not required for Developer Associate -----------------
+
+	Mobile services
+	Mobile Hub - management console, sets up AWS services for you.
+	Pinpoint - uses targeted push notifications to drive mobile engagement.
+	AWS AppSync - automatically updates data in web and mobile applications in real time.
+	Device Farm - test your apps on real live devices.
+	Mobile Analytics - analytics service for mobiles.
+
+	AR/VR
+	Sumerian - common set of tools for augmented reality, virtual reality etc.
+
+	Customer Engagement
+	Connect - contact centre as a service.
+	Simple Email Service - email service, scalable and customisable.
+
+	Business Productivity
+	Alexa for Business - used to dial into meetings, send notification to IT department.
+	Chime - video conferencing like zoom meetings.
+	Work Docs - dropbox for AWS.
+	WorkMail - Like office365.
+
+	Desktop and App Streaming
+	Workspaces - VDI for running OS in AWS.
+	AppStream 2.0 - run application in cloud and stream.
+
+	Internet of Things
+	iOT - have large number of devices sending back information.
+	iOT - manages large number of device data.
+	Amazon FreeRTOS - free operating system for microcontrollers.
+	Greengrass - run local compute message data-caching for connected devices.
+
+	Game Development
+	GameLift - service to develop games, including VR.
