@@ -1,0 +1,7 @@
+
+    Section 3 - IAM
+  - Used to manage AWS users and configure their access levels.
+  - Gives centralised control of your AWS account.
+  - Allows you to configure temporary access for users/devices.
+  - Can attach permissions to groups or to users individually.
+  - Roles allow you to grant access to trusted entities, i.e application code that needs to perform actions on AWS resources.
