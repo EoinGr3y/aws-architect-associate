@@ -1,0 +1,2 @@
+
+  - File permissions not synching for cross region replication.

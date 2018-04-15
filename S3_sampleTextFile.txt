@@ -1,0 +1,4 @@
+
+Adding a sample text file for upload to S3 - this is version 2
+
+This is the updated version for replication.

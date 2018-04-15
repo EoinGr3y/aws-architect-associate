@@ -1,0 +1,51 @@
+
+      Section 4 - S3
+    - Simple Storage Service, secure, scalable object storage.
+    - Place to store files, used by creator of dropbox.
+    - File size <= 5TB.
+    - Files are stored in buckets. (folders)
+    - Names of buckets must be unique globally.
+    - Read and write consistency for PUTS of new objects.
+    - Eventual consistencyfor PUTS and DELETES.
+
+      Storage Tiers
+    - S3 - standard.
+    - IA (infrequently accessed) - data accessed less frequently but required rapid access. Lower fee than S3 but has retrieval fee.
+    - Reduced Redundancy Storage - lower durability and lower fees than S3, used for data that can be generated again if lost.
+    - Glacier - Takes 3 to 5 hours to restore data, cheaper storage.
+
+      S3 Object Structure
+    - Key
+    - Value
+    - VersionID
+    - Metadata
+    - Sub resources: (access control lists, torrent))
+
+      Versioning
+    - Stores all versions of an object (including deletes).
+    - Cannot be disabled once enabled.
+    - MFA delete can provide additional layer of security.
+
+      Replication
+    - Versioning must be enabled on both buckets.
+    - Existing files are not replicated automatically, only newly created.
+    - Deleting individual versions will not be replicated.
+
+      Lifecycle management
+    - Automatically manage data transition from storage tiers after creation date.
+
+      CloudFront
+    - CDN - network of servers that deliver web content to a user based on geo location.
+    - origin - origin of all files the CDN will distribute.
+    - Distribution - name given to the CDN which consists of a collection of CDNs.
+    - Edge locations are for write as well as read.
+
+      Encryption
+    - In Transit;
+      - SSL/TLS.
+    - At Rest;
+      - Server side encryption;
+        - S3 Managed Keys SSE-S3
+        - AWS Key Management Service SSE-KMS
+        - Server side encryption with customer provided keys SSE-C
+      - Client side encryption
