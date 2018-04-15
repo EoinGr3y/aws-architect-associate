@@ -49,3 +49,13 @@
         - AWS Key Management Service SSE-KMS
         - Server side encryption with customer provided keys SSE-C
       - Client side encryption
+
+      Storage Gateway
+    - Connects on premise software appliance with cloud based storage.
+    - Downloaded as a VM image that you install on a host in your datacenter.
+    - Four different types;
+      - File Gateway. (NFS)
+      - Volume Gateway (iSCSI);
+        - Stored Volumes.
+        - Cached Volumes.
+      - Tape Gateway.
