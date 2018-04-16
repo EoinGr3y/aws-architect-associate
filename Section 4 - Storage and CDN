@@ -54,8 +54,15 @@
     - Connects on premise software appliance with cloud based storage.
     - Downloaded as a VM image that you install on a host in your datacenter.
     - Four different types;
-      - File Gateway. (NFS)
+      - File Gateway. (NFS);
+        - Flat files stored in your S3 buckets and accessed through a NFS mount point.
+        - Once objects area transferred to S3 they can be managed as S3 objects.
       - Volume Gateway (iSCSI);
-        - Stored Volumes.
-        - Cached Volumes.
-      - Tape Gateway.
+        - Data written to disk volumes in blocks.
+        - Data can be asynchronously backed up.
+        - Stored Volumes;
+          - Store entire copy of your data locally, data is backed up to AWS S3.
+        - Cached Volumes;
+          - Only keeping most recently written data locally, eveything else stored on S3.
+      - Tape Gateway;
+        - Archive data stored in AWS cloud as backups in S3 and can be configured to archive in Glacier.
