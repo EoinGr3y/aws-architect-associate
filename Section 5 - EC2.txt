@@ -1,0 +1,37 @@
+
+      Section 5 - EC2
+    - Virtual Machines in the cloud.
+    - Provides resizable compute capacity in the cloud.
+    - Instantly provision resources, no need for months of ordering systems etc.
+    - Only pay for capacity you use.
+    - Options;
+      - On demand;
+        - Pay fixed rate by the hour with no commitment or contract.
+        - Applications with short-term unpredictable workloads that cannot be interrupted.
+        - Applications being deployed or tested for the first time.
+      - Reserved
+        - Discount on hourly charge but requires 1 or 3 year contract.
+        - Applications with predictable usage.
+        - Upfront payment to reduce cost further.
+      - Spot
+        - Bid what you want for capacity, greater savings if you require off peak capacity.
+        - Applications that have flexible start and end times.
+        - Applications that need low compute prices.
+        - If AWS terminate your hour you get it free, if you cancel you pay.
+      - Dedicated hosts
+        - Physical EC2 server dedicated for your use, reduce costs as you can use existing server-bound software licenses.
+        - Used for regulatory requirements that may not allow multi-tenant virtualisation.
+        - Used for licensing that doesn't support multi-tenancy.
+    -  DR McGiftPics
+
+      EBS
+    - Create storage volumes and attach them to EC2 instances.
+    - You can create files systems, run databases or run any other block device operations on these devices.
+    - Automatically replicated.
+    - Cannot mount 1 EBS to multiple EC2 instances, instead use EFS.
+    - 4 types;
+      - General Purpose (SSD) - balance both price and performance. <= 10,000 IOPS
+      - Provisioned IOPS (SSD) - for I/O intensive applications, large databases. > 10,000 IOPS
+      - Throughput Optimized (HDD) - for big data, warehousing, log processing etc.
+      - Cold (HDD) - Lowest cost, used for infrequently accessed workloads.
+      - Magnetic Standard - Lowest cost of all bootable EBS, for infrequently accessed data.
