@@ -35,3 +35,16 @@
       - Throughput Optimized (HDD) - for big data, warehousing, log processing etc.
       - Cold (HDD) - Lowest cost, used for infrequently accessed workloads.
       - Magnetic Standard - Lowest cost of all bootable EBS, for infrequently accessed data.
+    - EBS must be in same AZ as EC2 instance.
+    - Creating snapshots allow you to copy volumes from one AZ to another.
+    - Volume snapshots are encrypted automatically.
+
+      Security Groups
+    - All inbound traffic blocked by default.
+    - Security group changes are applied immediately.
+    - Outbound rules are added automatically for inbound rules.
+
+      Other
+    - Termination protection is off by default.
+    - On EBS the default is for the root EBS to be deleted on termination.
+    - EBS root volumes cannot be encrypted (without 3rd party tools), only additional volumes.
