@@ -44,6 +44,13 @@
     - Security group changes are applied immediately.
     - Outbound rules are added automatically for inbound rules.
 
+      RAID
+    - RAID 0 - Striped, no redundancy, good performance.
+    - RAID 1 - Mirrored, redundancy.
+    - RAID 5 - recommended not to use this on EBS. Good for reads, bad for rights.
+    - RAID 10 - Striping and mirroring, good performance and redundancy.
+    - Need to shut down the EC2 instance to snapshot a RAID array.
+
       Other
     - Termination protection is off by default.
     - On EBS the default is for the root EBS to be deleted on termination.
