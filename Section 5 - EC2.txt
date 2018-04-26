@@ -51,7 +51,23 @@
     - RAID 10 - Striping and mirroring, good performance and redundancy.
     - Need to shut down the EC2 instance to snapshot a RAID array.
 
+      AMI
+    - Select the region, OS, architecture, launch permissions.
+    - All AMIs are either backed by EBS or instance store.
+    - Instance store volumes cannot be stopped.
+
+      ELB
+    - Healthchecks monitor instance health through polling.
+    - ELBs have DNS names, don't have IP addresses.
+    - Concentrate on classic ELBs for exam.
+
+      CloudWatch
+    - Standard monitoring 5 mins, detailed 1 minute.
+    - Events, help you respond to state changes in your resources.
+    - CloudWatch is for logging, CloudTrail is for auditing.
+
       Other
     - Termination protection is off by default.
     - On EBS the default is for the root EBS to be deleted on termination.
     - EBS root volumes cannot be encrypted (without 3rd party tools), only additional volumes.
+    - EC2Instance.info gives pricing information on AWS.
