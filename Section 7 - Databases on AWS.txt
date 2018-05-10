@@ -1,0 +1,5 @@
+
+    Section 7 - Databases on AWS
+  - Relational - Aurora, mysql, postgresql, oracle, microsoft sqlserver, maria db
+  - Non-relational - Dynamo db
+  - Data warehousing, used for business intelligence. Cognos, Jaspersoft etc.

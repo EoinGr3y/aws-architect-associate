@@ -1,2 +1,3 @@
 
   Section 4 - File permissions not synching for cross region replication.
+  Section 5 - Cannot mount EFS, security group configuration appears correct.

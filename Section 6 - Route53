@@ -1,0 +1,54 @@
+
+    Section 6 - Route53
+
+    DNS
+  - Converts human friendly domain names to an ip address.
+  - Domain name is a string of characters separated by dots (e.g. ".co.uk")
+  - Domain names are controlled by the IANA.
+  - Domain registrars are an authority that can assign domain names directly under one or more top-level domains.
+
+    SOA Records store information about;
+  - Name of server that supplied data for the zone.
+  - Administrator of the zone.
+  - Current version of the data file.
+  - Number of seconds a secondary name server should wait to check for updates.
+  - Number of seconds a secondary name server should wait to retry a failed zone transfer.
+  - Maximum number of seconds a secondary server can use data before it should be refreshed or expire.
+  - Default number of seconds for the time-to-live file on resource records.
+
+    NS records
+  - Used by top level domain servers to direct traffic to the Content DNS server.
+
+    TTL
+  - Length of time a DNS record is cached. (Time to Live)
+
+    CNAMES
+  - Canonical name, can be used to resolve one domain name to another.
+
+    Alias Record
+  - Used to map resource record sets in your hosted zone to ELB, S3 buckets etc.
+  - Route53 automatically detects changes in the record sets.
+
+    Route53 Routing Policies;
+    Simple;
+  - Default on creation, commonly used when you have a single resource for your domain, e.g. web server to serve content.
+
+    Weighted;
+  - Define a wight value to determine routing balance between multiple resources.
+  - Useful for A/B testing.
+
+    Latency;
+  - Route traffic based on the lowest latency for your end user.
+
+    Failover;
+  - Allows you to create an active/passive setup using healthchecks.
+
+    Geolocation;
+  - Route traffic based on geographic location of users.
+  - Used for scenarios where language/currency is important.
+
+    Exam tips
+  - ELBs don't have pre-defined ip4 addresses, they're resolved using a DNS name.
+  - Understand difference between Alias Record and CNAME.
+  - Given the choice always use Alias record over a CNAME.
+  - Different routing policies and use cases.

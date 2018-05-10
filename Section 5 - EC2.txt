@@ -66,6 +66,28 @@
     - Events, help you respond to state changes in your resources.
     - CloudWatch is for logging, CloudTrail is for auditing.
 
+      Placement Groups
+    - Logical groupings of instances within an AZ.
+    - They allow lower latency between grouped instances.
+    - Can't span multiple AZs.
+    - Only certain types of instances can be used in placement groups.
+    - You can't move existing instances directly into placement groups.
+
+      EFS
+    - Files storage service for EC2.
+    - Only pay for storage you use.
+    - Data is stored across multiple AZs in a region.
+    - Can share data across multiple EC2 instances.
+    - Ideal for a file server.
+
+      Lambda
+    - Upload your code and create a Lambda function.
+    - Lambda takes care of provisioning and managing the servers that run the code.
+    - NodeJS, Java, Python and C# functions are supported.
+    - Priced based on number of requests and duration of requests.
+    - Lambda scales out (not up) automatically.
+    - Triggers include API Gateway, Alexa Skills, Cloudwatch events, logs, S3, SNS.
+
       Other
     - Termination protection is off by default.
     - On EBS the default is for the root EBS to be deleted on termination.
