@@ -1,5 +1,25 @@
 
     Section 7 - Databases on AWS
-  - Relational - Aurora, mysql, postgresql, oracle, microsoft sqlserver, maria db
-  - Non-relational - Dynamo db
-  - Data warehousing, used for business intelligence. Cognos, Jaspersoft etc.
+  - Relational (OLTP) - Aurora, mysql, postgresql, oracle, microsoft sqlserver, maria db.
+  - Non-relational - Dynamo db.
+  - Data warehousing (OLAP) - used for business intelligence. Cognos, Jaspersoft, Red shift etc.
+  - OLTP vs OLAP - Online transaction processing, pull up a row of data from the db. Online analytics processing, data-warehousing, pull in large number of records for analytics.
+  - Elasticache - improve web application's performance using fast, in-memory caches.
+  - Mysql is always on port 3306.
+  - 2 types of backups for AWS, automated backups and database snapshots.
+  - Snapshots are done manually and are retained after deleting the rds instance, unlike automated backups.
+  - Multi AZ makes cross region, synchronous backups for disaster recovery. Sql server, oracle, mysql, pgsql, mariadb.
+  - Read replicas are copies of the db for read-only operations, improve performance for read-heavy workloads. Mysql server, pgsql, mariadb, aurora.
+
+    Redshift
+  - Columnar data storage.
+
+    Elasticache
+  - Caching solution used in conjunction with dbs to cache frequently queried data to improve performance.
+  - 2 types, memcached and redis.
+  - Good choice for reducing stress/load on read heavy dbs with infrequent data changing.
+
+    Aurora
+  - Mysql compatible, better performance with reduced price.
+  - Auto scales in 10GB increments.
+  
