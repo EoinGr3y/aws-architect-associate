@@ -1,0 +1,8 @@
+
+    Section 10 - Creating fault tolerant WordPress site
+  - .htaccess file determines you to use URL rewrite. Useful for showing images via CloudFront, also needs to be enabled on apache.
+  - Can use crontab to schedule syncs across EC2 instances.
+
+    CloudFormation
+  - Used to create templates or stacks that allow you to duplicate AWS instances.
+  -

@@ -1,0 +1,23 @@
+
+    Colombia 2.0 Working Session
+
+    Ecuador
+  - Similar flow to Colombia: Client Info -> Vehicle info -> etc
+  - Broker logs into a broker portal (in progress). Portal contains link to go to unqork.
+  - User puts in a client ID, integrates with SISA to get client information.
+  - Equifax - system that brings back client information using client ID from SISA.
+  - RCS - a list of restricted persons.
+  - If the person isn't restricted we enter additional information.
+  - Then we enter the vehicle plate, an SISA, or an external provider if required, returns information related to the plate.
+  - Enter vehicle accessories, if present.
+  - Show coverage options and payment plans.
+  - Quote is shown, lasts 30 days.
+  - Customer must then confirm to begin issue policy process.
+  - Model of inspection still needs to be defined, in progress.
+  - If the vehicle isn't new it will require an inspection, no MILS system in Ecuador, perhaps unqork will implement this.
+  - Evicertia - eSignature provider.
+  - If the vehicle has a continuouty then it won't need an inspection.
+  - Final step is to send the policy to SISA, which contains all the policy information.
+
+
+  - SISA is a system that contains all policy information for Ecuador.

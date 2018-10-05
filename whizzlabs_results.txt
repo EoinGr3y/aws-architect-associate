@@ -1,0 +1,139 @@
+
+    Section Results
+
+    API Gateway
+  - 67%
+
+    Autoscaling
+  - 50%
+
+    Secure Token Service
+  - 63%
+
+    EC2
+  - 75%
+
+    ELB
+  - 70$%
+
+    Management Tools
+  - 60%
+
+    Networking
+  - 50%
+
+    EBS
+  - 20%
+
+    Practice Test 1 - 59%
+  - Max IOPs for volume is 50:1
+  - Public ip address is accessed from http://169.254.169.254/latest/meta-data/public-ipv4
+  - API Gateway uses https endpoints.
+  - SQS default retention period is 4 days, max is 14.
+  - SQS messages must be deleted from queue by the consumer.
+  - VPC configuration determines DNS hostnames.
+  - Need to add a 0.0.0.0/0 -> IGW entry to allow internet traffic to a VPC.
+  - Cronjob with snapshot is the best way of backing up EBS volumes.
+  - Amazon EMR is used for processing and analysing large amounts of data.
+  - Bucket versioning must be enabled for cross-region-replication.
+  - Between /16 and /28 netmasks are allowed for VPCs.
+  - SQS, you cannot set priority on individual items within a queue.
+  - SQS encrypts messages automatically.
+  - VPC needs an internet gateway to receive internet traffic.
+  - Trusted Advisor is used to check service limits.
+  - AWS CloudFormation can be used to script duplicate resources for disaster recovery.
+  - Bastion hosts are in public subnets.
+  - Reserved instances cannot be converted to on-demand or spot instances.
+  - AMI can be used to create a disaster recovery solution.
+  - CloudWatch does not show Memory usage by default.
+  - Private ip is used for communication between instances in VPC.
+  - Server access logging allows you to track access to your buckets.
+  - Lower number rules take priority in NACLs.
+
+    Practice Test 2 - 68%
+  - RDS instance cannot be used as CloudFront origin server.
+  - EBS volume is replicated in same AZ, use snapshots in case of AZ failure.
+  - User can have multiple direct connections but must be in same regions.
+  - Root volume is deleted on termination of an instance.
+  - CloudTrail writes to S3.
+  - WAF - web application firewall.
+  - HSM, there is no way of recovering keys if you lose credentials.
+  - RDS does not provide access to underlying OS.
+  - Network Access rules are evaluated by number and executed immediately.
+  - RDP uses port 3389.
+
+    Practice Test 3 - 53%
+  - No need for elastic ip if you have public ip.
+  - EBS snapshots are both incremental and compete, no need for multiples.
+  - No way to encrypt an existing unencrypted volume.
+  - DynamoDB can be used to manage web sessions.
+  - Cloudwatch 1 minute data points are stored for 15days.
+  - STS allows you to create temporary credentials for IAM Users .
+  - Using an array of EBS volumes can improve throughput.
+  - Amazon Kenesis is the best service to analyse logs in real time.
+  - EC2 supports 2 block device types.
+  - STS can be integrated with LDAP groups to provide temporary access.
+  - IAM does not manage security groups.
+  - You can use tags to mark separate environments for IAM access.
+  - AWS is responsible for physical network infrastructure.
+  - Underlying host can change when an EC2 instance is stopped and started.
+  - An aliased A record is used by route53 to point to a load balancer domain name.
+  - CloudFront can help to mitigate DDOS attacks.
+  - RDS read replicas don't provide AZ failover.
+  - Max SQS size is 256KB.
+  - Perfect Forward Secrecy provides cipher suites for CloudFront and ELBs.
+  - HSM is an appliance for storing security keys.
+  - EC2 User Data can be used to define custom scripts for instance setup.
+
+    Practice Test 4 - 68%
+  - ENI warm attach is when an instance is stopped.
+  - Life-Cycle policies allow you to transition data to another AWS storage service. i.e move from S3 to Glacier after 1 year.
+  - EBS volumes can be used while snapshot is in progress.
+  - ELBs provide access logs to capture detailed information on requests received.
+  - Regional reserved instance can be applied to auto scaling instances.
+  - For S3, remove public read access and use signed URLs to restrict access.
+  - AWS Opworks is a service that lets you configure applications using Chef.
+  - Placement groups are logical groupings of instances within single AZ, allows lower network latency.
+  - AD connector is required to integrate with Active Directory authentication.
+  - Use multipart upload for large file upload to S3.
+  - Server access logging can be used for logging of a specific service.
+  - Default IAM login is https://{account_id or alias}.signin.aws.amazon.com/console
+  - Snapshots of encrypted volumes are automatically encrypted.
+  - AMIs are not shared across regions, must be copied manually.
+  - A current EC2 instance must be in the same AZ as an Autoscaling group to be added.
+  - SWF ensures a message will only be processed once.
+  - ELBs stop routing traffic to instances that have failed health check.
+  - Both inbound and outbound must be allowed by NACLs for traffic to flow.
+
+    Practice Test 5
+  - Use roles to give users access to resources.
+  - Elastic beanstalk allows access to the underlying infrastructure.
+  - Amazon import/export allows transfer of large amounts of data.
+  - Use long polling to reduce number of polling cycles.
+  - Use Cloudtrail for auditing.
+  - EBS volumes attached to stopped instances will incur cost.
+  - 5TB is max size for multipart upload.
+  - Multi object delete can delete large volumes of objects from S3.
+  - SAML Federation is used for Active Directory authorisation.
+  - AWS is responsible for protecting against IP spoofing and packet sniffing.
+  - Only use cloudformation for large stack deployments.
+  - Maximum execution time for Lambda is 300 secs.
+  - You can adjust EBS volumes without detaching.
+
+    Practice Test 6 - 65%
+  - EMR allows full admin access to underlying instances.
+  - URL format for S3 is {bucket-name}.s3-website-{region}.amazonaws.com
+  - By default all subnets can route between each other.
+  - Customers are responsible for patching EC2 instances.
+  - Cloudtrail monitors all AWS API calls.
+  - In IAM, you need to create a set of access keys for newly created users.
+  - Use dynamoDB for storing user state information.
+  - Elastic IPs incur costs when associated with stopped instances.
+  - S3 bucket name must be the same as your domain name for website hosting.
+  - Cross-zone load balancing must be enabled on ELBs.
+  - Auto scaling will fail if you have already reached your on demand instance limit. (20)
+  - Run command allows you to administer instances without SSH or RDP.
+  - Stopping and starting an instance causes it to be provisioned on different hardware.
+  - Master account and member account for Consolidated billing.
+  - Pilot light is a DR scenario.
+  - Minimum upload to S3 is 0 bytes.

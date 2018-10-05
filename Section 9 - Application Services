@@ -1,0 +1,38 @@
+
+    Section 9 - Application Services
+
+    SQS
+  - Web services that gives access to a message queue for up to 14 days.
+  - SQS is pull based, queue is polled by subscribers to consumer messages.
+  - Messages can contain up to 256KB of text in any format.
+  - 2 types of queues - standard (order not guaranteed) and FIFO (order preserved).
+  - FIFO are limited to 300 transactions per sec.
+  - SQS visibility timeout should match the time taken to process the message, max value is 12 hrs, default is 30s.
+    SWF
+  - Simple workflow service - web service that makes it easy to coordinate work across distributed application components.
+  - Retention period of up to 1 year.
+  - Worker - program that interacts with SWF to get tasks, process them and return results.
+  - Decider - program that controls the coordination of tasks, their ordering and scheduling according to the application logic.
+  - Tasks in SWF are only assigned once and never duplicated.
+  - SWF is a task-orientated API, while SQS is a message-orientated API.
+    SNS
+  - Web service for sending notifications from the cloud, can publish messages from an application and deliver them to subscribers or other applications.
+  - Push notifications to Apple, Google, Fire OS, Windows and android devices.
+  - Can be used to send notifications by text message, email, SQS queues, any HTTP endpoint or to trigger Lambda functions.
+  - Push-based delivery.
+    Elastic Transcoder
+  - Media transcoder in the cloud.
+  - Convert media files from one format to another
+    API gateway
+  - Service that allows developers to publish, maintain, monitor and secure APIs at any scale.
+  - You can cache an endpoints response to improve latency of responses.
+  - Scales automatically.
+    CORS
+  - Cross Origin Resource Sharing - allows restricted resources on a webpage to be requested from another domain outside the domain from which the first resource is served.
+    Kinesis
+  - Platform on AWS that you can send streaming data to.
+  - Easy to load and analyze streaming data and can build custom applications for your business need.
+  - Kinesis streams - data producers (phones, laptops etc) send data to kinesis streams, consumers then take the data from the stream shards. Data can be retained in streams for up to a week.
+  - Streams consist of shards, shards give up to 5 transactions/sec for reads, max read rate of 2MB/sec and 1000 records/sec for writes, max write rate of 1MB/sec.
+  - Firehose - data producers send data to firehose, no shards or consumers required.
+  - Analytics - run sql queries on data when it's in firehose or streams.

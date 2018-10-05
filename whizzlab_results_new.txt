@@ -1,0 +1,71 @@
+
+    CSAA Practice Test 1 (31/08/18 3:05PM) - 62%
+  - Kinesis only used for real-time data processing/analytics.
+  - Aurora can grow up to 64TB, has replica lag < 100ms and up to 15 replicas.
+  - Minimum volume of throughput optimised HDD is 500GB.
+  - S3 infrequent access is more cost effective than glacier with expedited retrievals.
+  - Use autoscaling group cool down timers to stabilise scaling.
+  - Use S3 prefixes to improve throughput.
+  - Elasticache is ideal for storing session data.
+  - Using a sequential prefix for S3 upload increases the likelihood of writing to the same partition, slowing performance.
+  - VPC flow logs captures IP traffic going to and from your VPC.
+  - Use throughput optimised for batch processing activities.
+  - NAT Gateway must be hosted in a public subnet.
+  - Lambda can be cost effective, as you only pay when it runs, no infrastructure costs.
+  - VPC endpoint allows you to privately connect a VPC to amazon resources.
+  - Use static websites for disaster recovery.
+  - Use multivalue answer for random routing with route53.
+
+    CSAA Practice Test 2 (02/09/18 10:48PM) - 80%
+  - Use DynamoDB streams to trigger events based on data edits.
+  - Use individual NAT gateways in each availability zone to improve availability.
+  - VM Import tools allows importing of VMs to AWS.
+  - You can delete unnecessary Redshift snapshots to save money.
+  - Gateway cached volumes can compliment existing customer storage space.
+
+    CSAA Practice Test 3 (03/09/18 9:54PM) - 74%
+  - Not all RDS instance types support encryption.
+  - SQS queues eliminate the possibility of data loss.
+  - Use read replicas for RDS disaster recovery.
+  - Use VPNs to connect on-premise to AWS over the internet.
+  - Use Cloudwatch metrics to monitor for errors.
+  - Use signed URLs for S3 access control.
+  - Use Opsworks to define stack-based models.
+  - IAM policies can manage permission levels for users.
+  - User data allows custom installations on EC2 instances.
+  - Cannot use Multi AZ on a self managed db.
+  - Public ip addresses change when an instance is stopped and started.
+
+    CSAA Practice Test 4 (07/09/18 01:46) - 84%
+  - Cloudtrail logs are encrypted by default.
+  - Updates take time to take effect in S3, eventual consistency.
+  - Use Gateway Stored volumes for on-premise backups.
+  - SSE-S3 uses amazon-managed encryption keys.
+  - Elastic beanstalk provides auto-scaling.
+  - Weighted routing is best for blue-green deployments.
+  - Multi AZ for RDS doesn't improve performance.
+
+    CSAA Practice Test 5 (08/09/18 11:01) - 82%
+  - Separate AWS accounts can be used to restrict resource deletion.
+  - Elasticache can improve gaming performance.
+  - DynamoDB stream is a flow of information about changes to items in a table.
+  - Flow logs monitor traffic in and out of instances.
+  - Back up and restore is cheaper than pilot light.
+  - EBS is automatically replicated in it's AZ.
+  - Use cross-regions snapshots for redshift cluster disaster recovery.
+
+    CSAA Practice Test 6 (14/09/18 1:23) - 84%
+  - ECS doesn't require any infrastructure maintenance.
+  - AWS Direct Connect doesn't encrypt traffic.
+  - HSM gives complete control of encryption keys.
+  - Alias names provide DNS functionality.
+  - CRR is needed for S3 disaster recovery.
+  - Service control policies define which service APIs can be accessed by IAM entities.
+
+    CSAA Practice Test 7 (17/09/18 12:22) - 84%
+  - NAT Gateways should be placed in multi AZs.
+  - Autoscaling can be enabled for DynamoDB.
+  - KMS is AWS managed keys.
+  - Redshift clusters can use CRR.
+  - ELBs can be in public subnet while EC2 instances are in private.
+  - Cross account IAM role can grant Resource access to third parties.

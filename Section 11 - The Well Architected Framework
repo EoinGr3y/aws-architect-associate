@@ -1,0 +1,18 @@
+
+    Section 11 - The Well Architected Framework
+
+    Best Practices Whitepaper
+    Benefits of the Cloud
+  - Zero upfront infrastructure, more efficient resource usage, reduced time to market, scriptable infrastructure, auto scaling, disaster recovery.
+
+  - Design for failure, be a pessimist.
+  - Decouple your components. (SQS)
+  - Implement elasticity;
+    - Proactive cyclic scaling - periodic scaling that occurs at a fixed regular interval.
+    - Proactive event scaling - expecting a big surge. (e.g. black friday)
+    - Auto scaling based on demand - use a monitoring service and scale up or down based on metrics.
+  - Well architected documentation at - https://aws.amazon.com/architecture/well-architected/
+
+    Pillar One - Security
+  - Apply security at all layers.
+  - 

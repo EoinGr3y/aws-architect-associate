@@ -1,0 +1,26 @@
+
+    VPC
+  - Essentially a virtual private data centre in the cloud.
+  - Launch instances into a chosen subnet.
+  - Assign custom IP address ranges in each subnet.
+  - Configure route tables between subnets.
+  - Create internet gateway and attach it to your VPC.
+  - VPC peering allows you to connect one VPC to another via a direct network route.
+  - VPC peering is not transitive.
+  - NAT (Network Address Translation), being replaced by NAT gateway.
+  - Must disable source/destination checks on NAT instances.
+  - NAT instances must be on a public subnet.
+  - Must be a route out from the private subnet to the NAT instance.
+  - NAT gateway scale automatically up to 10Gbps.
+  - No need to patch NAT gateway, not associated with security groups, automatically assigned public ip address, no need to disable source/destination checks.
+  - Can only associate a subnet to 1 NACL at a time. NACL can only exist in one VPC.
+  - Use 100 increments in NACL, lower number rules will take precedence. i.e 99 will override 101. NACLs also take precendence over security groups.
+  - VPC automatically comes with default NACL, allowing all inbound and outbound.
+  - Custom NACLs block all inbound and outbound by default.
+  - VPC flow logs allow capturing of ip traffic to and from network interfaces to your VPC, stored using CloudWatch logs.
+  - Flow logs can be created at 3 levels - VPC, subnet and network interface level.
+  - Can stream logs to Lambda, allowing you to react to a logged traffic event.
+  - The following traffic isn't logged - Amazon DNS traffic, Amazon Windows license activation, 169.254.169.254 for metadata, DHCP, traffic to the reserved ip address for default VPC router.zx
+  - Bastion - allows users to connect to instances in a private subnet via ssh, rdp through the bastion instance, useful for admin.
+  - NAT - Allows internet traffic to EC2 instances in a private subnet.
+  - VPC endpoint - provides a direct route from the private subnet to the internet, no need to route through NAT gateway.
